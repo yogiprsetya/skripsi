@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web - VR</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <style>
+    body { margin: 0 }
+  </style>
+</head>
+<body>
+  <main id="container"></main>
+
+  <script src="./client.bundle?platform=vr"></script>
+  <script>
+    // Initialize the React 360 application
+    React360.init(
+      'index.bundle?platform=vr&dev=true',
+      document.getElementById('container'),
+      {
+        assetRoot: 'static_assets/',
+      }
+    );
+  </script>
+</body>
+
+</html>
